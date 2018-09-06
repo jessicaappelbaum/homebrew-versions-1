@@ -35,14 +35,14 @@ class Protobuf241 < Formula
     doc.install "editors", "examples"
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<-EOS
     Editor support and examples have been installed to:
       #{doc}
     EOS
   end
 
   test do
-    (testpath/"test.proto").write <<-EOS.undent
+    (testpath/"test.proto").write <<-EOS
       package test;
       message TestCase {
         required string name = 4;
